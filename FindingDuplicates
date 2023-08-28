@@ -1,0 +1,19 @@
+## Looking for Duplicates in the Film Table
+
+SELECT title, release_year, language_id, length, rating,
+COUNT(*)
+FROM film
+GROUP BY title, release_year, language_id, length, rating
+HAVING COUNT (*) > 1
+
+# No results
+
+## Looking for Duplicates in the Customer Table
+
+SELECT store_id, first_name, last_name, email,
+COUNT(*)
+FROM customer
+GROUP BY store_id, first_name, last_name, email
+HAVING COUNT (*) > 1
+
+# No results
