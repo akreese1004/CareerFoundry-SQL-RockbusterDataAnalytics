@@ -1,0 +1,31 @@
+# Identifying the MIN, MAX, and AVG of Numerical Values in the Film Table.
+
+SELECT
+MIN(rental_duration), MAX(rental_duration), AVG(rental_duration),
+MIN(rental_rate), MAX(rental_rate), AVG(rental_rate),
+MIN(replacement_cost), MAX(replacement_cost), AVG(replacement_cost),
+MIN(length), MAX(length), AVG(length)
+FROM film
+-------------------------------------------------------------------------------------------
+# Identifying the MODE of Non-Numerical Values in the Film Table.
+
+SELECT 
+MODE () WITHIN GROUP (ORDER BY title),
+MODE () WITHIN GROUP (ORDER BY description),
+MODE () WITHIN GROUP (ORDER BY release_year),
+MODE () WITHIN GROUP (ORDER BY rating),
+MODE () WITHIN GROUP (ORDER BY last_update),
+MODE () WITHIN GROUP (ORDER BY fulltext)
+FROM film
+-------------------------------------------------------------------------------------------
+# Identifying the MODE of Non-Numerical Values in the Customer Table.
+
+SELECT 
+MODE () WITHIN GROUP (ORDER BY first_name),
+MODE () WITHIN GROUP (ORDER BY last_name),
+MODE () WITHIN GROUP (ORDER BY email),
+MODE () WITHIN GROUP (ORDER BY create_date),
+MODE () WITHIN GROUP (ORDER BY last_update),
+MODE () WITHIN GROUP (ORDER BY activebool),
+MODE () WITHIN GROUP (ORDER BY active)
+FROM customer
