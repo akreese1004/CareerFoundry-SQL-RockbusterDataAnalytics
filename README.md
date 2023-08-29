@@ -13,6 +13,7 @@ Queried a movie rental company’s database to provide solutions for stakeholder
 # Project Brief
 
 **Introduction** 
+
 Rockbuster Stealth LLC is a movie rental company that used to have stores around the
 world. Facing stiff competition from streaming services such as Netflix and Amazon Prime,
 the Rockbuster Stealth management team is planning to use its existing movie licenses to
@@ -29,7 +30,8 @@ need to acquire a good understanding of the various data points. You’ll eventu
 the results of your analysis into an easily digestible format, which will be presented to the
 Rockbuster Stealth Management Board.
 
-**Key Questions and Objectives**'
+**Key Questions and Objectives**
+
 The Rockbuster Stealth Management Board has asked a series of business questions and
 they expect data-driven answers that they can use for their 2020 company strategy. Here are
 the main questions they’d like to answer:
@@ -41,4 +43,5 @@ the main questions they’d like to answer:
 ● Do sales figures vary between geographic regions?
 
 **Data Set**
+
 Data set contains information about Rockbuster’s film inventory, customers, and payments, etc. (See data directory)
