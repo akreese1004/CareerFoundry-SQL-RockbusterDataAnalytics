@@ -1,6 +1,6 @@
 # SQL
 
-# RockbusterDataAnalytics
+# Rockbuster Data Analytics
 
 **Project Summary**
 
