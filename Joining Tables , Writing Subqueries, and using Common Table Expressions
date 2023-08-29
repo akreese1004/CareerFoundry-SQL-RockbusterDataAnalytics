@@ -1,4 +1,4 @@
-# Identifying the top 10 countries for Rockbuster in terms of customer numbers.
+# 1. Identifying the top 10 countries for Rockbuster in terms of customer numbers.
 
 SELECT D. country,
 COUNT (customer_id)
@@ -10,7 +10,7 @@ GROUP BY country
 ORDER BY COUNT DESC
 LIMIT 10
 ----------------------------------------------------------------------------------------------------------------------------
-# Finding the top 10 cities that fall within the top 10 countries identified previously.
+# 2. Finding the top 10 cities that fall within the top 10 countries identified previously.
 
 SELECT
 D.country,
@@ -26,7 +26,7 @@ GROUP BY country, city
 ORDER BY COUNT DESC
 LIMIT 10
 ----------------------------------------------------------------------------------------------------------------------------
-# Finding the top 5 customers within the previously identified top 10 cities who have paid the most money to Rockbuster.
+# 3. Finding the top 5 customers within the previously identified top 10 cities who have paid the most money to Rockbuster.
 
 SELECT A.customer_id, A.first_name, A.last_name,
 D.country,
@@ -43,7 +43,7 @@ GROUP BY A.customer_id, first_name, last_name, country, city
 ORDER BY SUM DESC
 LIMIT 5
 ----------------------------------------------------------------------------------------------------------------------------
-# Finding the average amount paid by the top 5 customers using a subquery.
+# 4. Finding the average amount paid by the top 5 customers using a subquery.
 
 SELECT AVG(total_amount_paid) AS "Average"
 FROM
@@ -62,7 +62,7 @@ GROUP BY A.customer_id, first_name, last_name, country, city
 ORDER BY total_amount_paid DESC
 LIMIT 5) AS total_amount_paid;
 ----------------------------------------------------------------------------------------------------------------------------
-# Finding how many of the top 5 customers are in each country using an inner query and outer query.
+# 5. Finding how many of the top 5 customers are in each country using an inner query and outer query.
 
 SELECT D.country, COUNT(A.customer_id) AS all_customer_count, COUNT(top_5_customers) AS top_customer_count
 FROM customer A
@@ -85,3 +85,5 @@ LIMIT 5) AS top_5_customers ON A.customer_id = top_5_customers.customer_id
 GROUP BY D.country
 HAVING COUNT (top_5_customers) > 0
 ORDER BY COUNT (top_5_customers), COUNT(A.customer_id) DESC
+----------------------------------------------------------------------------------------------------------------------------
+# 6. 
