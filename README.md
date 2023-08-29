@@ -10,7 +10,7 @@ Queried a movie rental company’s database to provide solutions for stakeholder
 * Wrote a data directory so colleagues and stakeholders can easily understand the layout and relationships of the database.
 * Analyzed the requested data and utilized Tableau to create a presentation for stakeholders; offering recommendations.
 
-# Project Brief
+# Project Brief from CareerFoundry
 
 ### **Introduction** 
 
