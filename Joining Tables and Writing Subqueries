@@ -86,4 +86,4 @@ GROUP BY D.country
 HAVING COUNT (top_5_customers) > 0
 ORDER BY COUNT (top_5_customers), COUNT(A.customer_id) DESC
 ----------------------------------------------------------------------------------------------------------------------------
-# 6. 
+# 6.
